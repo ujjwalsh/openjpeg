@@ -13,6 +13,7 @@ matrix:
       env: OPJ_CI_CC=clang-3.8 OPJ_CI_CXX=clang-3.8 OPJ_CI_CHECK_STYLE=1 OPJ_CI_SKIP_TESTS=1
       arch:
           - ppc64le
+          - amd64
       addons:
         apt:
           sources:
@@ -28,6 +29,7 @@ matrix:
       dist: precise
        arch:
           - ppc64le
+          - amd64
       env: OPJ_CI_ARCH=x86_64 OPJ_CI_BUILD_CONFIGURATION=Release OPJ_CI_INCLUDE_IF_DEPLOY=1 OPJ_CI_PERF_TESTS=1
 
 # Test compilation with AVX2
@@ -38,6 +40,7 @@ matrix:
       compiler: clang-3.8
        arch:
           - ppc64le
+          - amd64 
       env: OPJ_CI_CC=clang-3.8 OPJ_CI_CXX=clang-3.8 OPJ_CI_INSTRUCTION_SETS="-mavx2" OPJ_CI_BUILD_CONFIGURATION=Release
       addons:
         apt:
@@ -53,6 +56,7 @@ matrix:
       dist: precise
        arch:
           - ppc64le
+          - amd64
       env: OPJ_CI_ARCH=x86_64 OPJ_CI_BUILD_CONFIGURATION=Release OPJ_NUM_THREADS=2
 
 # Test 32-bit compilation
@@ -62,6 +66,7 @@ matrix:
       dist: trusty
        arch:
           - ppc64le
+          - amd64
       addons:
         apt:
           packages:
@@ -75,6 +80,7 @@ matrix:
       dist: trusty
       arch:
           - ppc64le
+          - amd64
       addons:
         apt:
           packages:
@@ -93,6 +99,7 @@ matrix:
       dist: trusty
       arch:
           - ppc64le
+          - amd64
       addons:
         apt:
           sources:
@@ -108,6 +115,7 @@ matrix:
       dist: trusty
       arch:
           - ppc64le
+          - amd64
       addons:
         apt:
           packages:
@@ -126,6 +134,7 @@ matrix:
       dist: trusty
       arch:
           - ppc64le
+          - amd64
       addons:
         apt:
           packages:
@@ -142,6 +151,7 @@ matrix:
       dist: precise
       arch:
           - ppc64le
+          - amd64
       addons:
         apt:
           sources:
